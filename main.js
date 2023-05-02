@@ -50,5 +50,29 @@ function finalArray(event){
 
 
 
+function generateArray(){
+    if(arrOne.length < inputOne.value){
+        alert('You have not entered enough numbers');
+        return;
+    }
+    let arrTwo = [];
+    if(inputOne.value !== '' && inputTwo.value !== '' ){
+        let first = parseInt(inputOne.value)
+        let second = parseInt(inputTwo.value)
+        while(arrTwo.length < arrOne.length){
+            let randomNum = Math.floor(Math.random()* second) + 1;
+            if(!arrTwo.includes(randomNum)){
+                arrTwo.push(randomNum);
+                console.log(arrTwo);
+                arrTwo.sort(function(a, b){return a-b});
+            } ;
+        };
+    }
+    let ourNumbers = document.createElement('div');
+    secondRow.appendChild(ourNumbers).innerHTML = arrTwo;
+    console.log(firstValue);
+}
+
+
 
 
