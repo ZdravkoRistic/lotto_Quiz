@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+body {
+    background-image: url('lotto.jpg')
+}
+
+main {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 600px;
+    align-items: center;
+}
+
+
+
+.container {
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_box, .right_box {
+    display: flex;
+    width: 45%;
+    height: 500px;
+    background-color: cadetblue;
+    border-radius: 2rem;
+    box-shadow: 0 0 10px black;
+}
+
+.left_box {
+
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2.5rem;
+}
+
+.right_box {
+    padding: 5px;
+}
+
+.inputs {
+    display: flex;
+    display: block;
+    padding: 10px;
+    flex: 1;
+    padding:  0 10px ;
+}
+
+.button {
+    display: flex;
+    display: block;
+    padding: 1rem 1rem;
+}
+.selectedBall {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    cursor: pointer;
+    float: left;
+    gap: 1.3rem;
+}
+
+.compared_numbers {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+
+}
+
+
+
+@media screen and (max-width: 900px){
+  .container {
+
+      justify-content: center;
+      text-align: center;
+      max-width: 100%;
+  }
+    .inputs, button {
+        margin: 10px auto;
+        flex: none;
+
+    }
+
+
+}
+
+#buttonOne, #buttonTwo {
+    height: 30px;
+    margin: 1rem auto;
+}
+
+.compared_numbers {
+    text-align: center;
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-radius: 2rem;
+    justify-content: space-between;
+    height: 30px;
+    padding: 0 20px ;
+    margin:0 10px 10px;
+
+}
+.headings {
+    padding: 2rem 2rem;
+    margin-bottom: 0.5rem;
+    background-color: #fff;
+    border-radius: 2rem;
+}
